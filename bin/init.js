@@ -8,7 +8,7 @@ const paths  = rfr('bin/lib/paths.js');
 
 const server = env.MBRWP_SERVER;
 const bedrock = (env.MBRWP_INSTALL_BEDROCK === 'true')
-const install = bedrock ? 'bedrock' : 'apache2';
+const install = bedrock ? 'bedrock' : 'default';
 
 let command = 
 `npm run docker:down && \
@@ -22,6 +22,9 @@ npm run wp:${install}:download && \
 if (bedrock) {
   command = command + 
   `npm run wp:bedrock:env &&`;
+} else {
+  command = command + 
+  `npm run wp:default:config &&`;
 }
 
 command = command +
