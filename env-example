@@ -7,7 +7,7 @@ MBRWP_SERVER_NAME=localhost
 MBRWP_INSTALL_BEDROCK=true
 
 # Choose witch server setup to use. 'nginx' or 'apache2'
-MBRWP_SERVER=apache2
+MBRWP_SERVER=nginx
 
 # Envoriment for Bedrock - ignore this if using default WordPress. 
 MBRWP_WP_ENV=development
