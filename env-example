@@ -188,7 +188,9 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+# note: there currently is a bug with the latest mysql version, use 5.7
+#MYSQL_VERSION=latest
+MYSQL_VERSION=5.7
 MYSQL_DATABASE=wordpress
 MYSQL_USER=mbrwp
 MYSQL_PASSWORD=mbrwp
