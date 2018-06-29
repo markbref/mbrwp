@@ -13,7 +13,7 @@
 
 ## Automatization 
 
-Just install dependencies `npm i` rename env-example to .env, add project customization to .env, run `npm run wp:init` and you will have a running WordPress project.
+Just install dependencies `npm i` rename env-example to .env, add project customization to .env, run `npm start` and you will have a running WordPress project.
 
 See package.js for more scripts
 
