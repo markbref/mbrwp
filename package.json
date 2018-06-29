@@ -4,6 +4,7 @@
   "description": "Docker boilerplate for wordpress based on laradock",
   "main": "lib/index.js",
   "scripts": {
+    "start": "npm run wp:init",
     "composer": "docker-compose exec -T --user=laradock workspace composer",
     "wp": "docker-compose exec -T --user=laradock workspace wp",
     "server:conf": "node bin/server-config.js",
